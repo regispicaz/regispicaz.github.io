@@ -107,6 +107,7 @@ button:hover svg {
 .downResume a{
   color: var(--color-05);
   transition: all .3s;
+  font-size: x-small;
 }
 
 .downResume a:hover{
