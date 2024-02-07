@@ -28,6 +28,9 @@
     
 </head>
 <body>
+    <!-- Preload -->
+    <div id="preload"></div>
+
     <header>
         
     </header>
@@ -100,5 +103,15 @@
 
     <!--  JS Google adsense anuncios-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1603228138425346" crossorigin="anonymous"></script>
+
+    <!-- Preload JS -->
+    <script>
+
+        var loader = document.getElementById("preload");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        });
+
+    </script>
 </body>
 </html>
