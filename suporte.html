@@ -1,65 +1,103 @@
+
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Regis | Suporte</title>
-
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body class="bg-slate-200 text-zinc-900">
-		<header>
-			<nav class="bg-slate-600 text-zinc-100">
-				<div class="container mx-auto flex justify-between items-center py-4">
-					<a href="./index.html" class="text-xl font-bold">Regis Picaz</a>
-					<ul class="flex gap-4">
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="#suporte">Suporte</a></li>
-						<li><a href="#links">Links Úteis</a></li>
-					</ul>
-				</div>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Régis Picáz | Suporte</title>
+	<meta name="description" content="Página de suporte para contato e links úteis. Desenvolvedor de Software PHP/Laravel, VueJS & Tailwind.">
+	<meta name="keywords" content="Suporte, Contato, Links Úteis, Desenvolvedor PHP, Laravel, VueJS, Tailwind CSS">
+	<meta name="author" content="Régis Picáz">
+	<meta name="theme-color" content="#111827">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="src/assets/js/app.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="src/assets/styles/app.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="antialiased bg-gray-50 text-gray-900">
+	<header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-40 shadow-sm">
+		<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+			<a href="index.html" class="text-2xl font-bold tracking-wider">RÉGIS<span class="highlight-color">PICÁZ</span></a>
+			<nav class="hidden md:flex space-x-8 items-center">
+				<a href="index.html" class="hover:text-red-500 transition-colors">Home</a>
+				<a href="#suporte" class="hover:text-red-500 transition-colors">Suporte</a>
+				<a href="#links" class="hover:text-red-500 transition-colors">Links Úteis</a>
 			</nav>
-		</header>
-		<div class="container mx-auto" id="suporte">
-			<h1 class="text-4xl text-center mt-10">Suporte</h1>
-			<p class="text-center mt-5">
-				Entre em contato comigo através do e-mail:
-				<a href="mailto:regis@ecossistemas.tech" class="text-blue-500">
-					regis@ecossistemas.tech</a
-				>
-			</p>
-
-      <p class="text-center mt-5">
-        Ou através do whatasapp: <a href="https://wa.me/5553981296445" class="text-blue-500">+55(53)9-8129-6445</a>
+			<button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Abrir menu">
+				<i class="fas fa-bars text-2xl"></i>
+			</button>
 		</div>
+		<div id="mobile-menu" class="hidden md:hidden">
+			<a href="index.html" class="block py-2 px-6 text-sm hover:bg-gray-200">Home</a>
+			<a href="#suporte" class="block py-2 px-6 text-sm hover:bg-gray-200">Suporte</a>
+			<a href="#links" class="block py-2 px-6 text-sm hover:bg-gray-200">Links Úteis</a>
+		</div>
+	</header>
 
-		<div class="container mx-auto" id="links">
-			<h1 class="text-4xl text-center mt-10">Links Úteis</h1>
-      <ul class="mt-5 w-full lg:w-1/2 text-zinc-100">
-        <li class="mb-4">
-          <div class="card mx-4 p-4 bg-slate-500 text-zinc-100 rounded-md">
-            <a href="https://www.ecossistemas.tech" class="">Ecossistemas - site da empresa </a> 
-          </div>
+	<main class="pt-28 pb-16">
+		<section id="suporte" class="py-20 animated-section">
+			<div class="container mx-auto px-6">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-5xl font-bold mb-4">Suporte</h1>
+					<p class="max-w-2xl mx-auto text-gray-600 mb-6">Entre em contato comigo através dos canais abaixo:</p>
+					<div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+						<div class="bg-white shadow-md rounded-lg px-8 py-6 flex flex-col items-center w-full md:w-1/3">
+							<i class="fab fa-whatsapp text-3xl text-green-500 mb-2"></i>
+							<span class="font-semibold">WhatsApp</span>
+							<a href="https://wa.me/555392419079" target="_blank" class="text-green-600 mt-2">+55 (53) 9 9241-9079</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-					<div class="card mx-4 p-4 bg-slate-500 text-zinc-100 rounded-md">
-            <a href="/data/eco-papper.png" class="">Ecossistemas - walpaper </a> 
-          </div>
+		<section id="links" class="py-20 bg-gray-100 animated-section">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-bold">Links Úteis</h2>
+					<p class="text-gray-600 mt-2">Ferramentas e sites recomendados para facilitar seu dia a dia.</p>
+				</div>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="border-l-4 border-red-500 pl-6 bg-white shadow-md rounded-md py-4">
+						<a href="https://www.ecossistemas.online" target="_blank" class="font-bold text-red-500">Ecossistemas - site da empresa</a>
+						<p class="text-gray-600 text-sm mt-2">Site institucional da Ecossistemas.</p>
+					</div>
+					<div class="border-l-4 border-red-500 pl-6 bg-white shadow-md rounded-md py-4">
+						<a href="https://www.testarteclado.com.br/" target="_blank" class="font-bold text-red-500">Testar teclado</a>
+						<p class="text-gray-600 text-sm mt-2">Ferramenta online para testes de teclado.</p>
+					</div>
+					<div class="border-l-4 border-red-500 pl-6 bg-white shadow-md rounded-md py-4">
+						<a href="https://pt.webcamtests.com/" target="_blank" class="font-bold text-red-500">Teste de webcam online</a>
+						<p class="text-gray-600 text-sm mt-2">Teste sua webcam diretamente do navegador.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-        </li>
-        <li class="mb-4">
-          <div class="card mx-4 p-4 bg-slate-500 text-zinc-100 rounded-md">
-            <a href="https://www.testarteclado.com.br/">Testar teclado - Ferramenta online para testes de teclado</a>
-          </div>
-        </li>
-        <li class="mb-4">
-          <div class="card mx-4 p-4 bg-slate-500 text-zinc-100 rounded-md">
-            <a href="https://pt.webcamtests.com/">Teste de webcam online</a>
-          </div>
-        </li>
-    </div>
+	<footer class="bg-gray-800 text-white pt-16 pb-8">
+		<div class="container mx-auto px-6">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold">Precisa de mais ajuda?</h2>
+				<p class="text-gray-400 mt-2 max-w-xl mx-auto">Estou disponível para tirar dúvidas e ajudar com qualquer necessidade técnica. Entre em contato!</p>
+				<a href="https://wa.me/5553981296445" target="_blank" class="inline-block bg-green-500 text-white px-8 py-3 rounded-md mt-6 font-bold hover:bg-green-600 transition-colors">Fale comigo no WhatsApp</a>
+			</div>
+			<div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+				<p class="text-gray-400">2025 Régis Picaz. Todos os direitos reservados.</p>
+				<div class="flex space-x-6 mt-4 md:mt-0">
+					<a href="https://github.com/regispicaz" target="_blank" aria-label="Github" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+					<a href="https://linkedin.com/in/regispicaz" target="_blank" aria-label="LinkedIn" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-		<footer class="text-center mt-10">
-			<p>Desenvolvido por Regis Picaz</p>
-		</footer>
-	</body>
+	<a href="https://wa.me/555392419079" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all transform hover:scale-110" aria-label="Fale comigo no WhatsApp">
+		<i class="fab fa-whatsapp text-3xl"></i>
+	</a>
+</body>
 </html>

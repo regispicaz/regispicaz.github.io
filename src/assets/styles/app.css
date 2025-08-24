@@ -1,0 +1,55 @@
+/* Resets de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base para o corpo da página */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #111827;
+}
+
+/* Cor de destaque */
+.highlight-color {
+    color: #EF4444; /* Vermelho como na imagem */
+}
+.bg-highlight {
+    background-color: #EF4444;
+}
+
+/* Animação de entrada suave para seções */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo da borda da imagem do herói */
+.hero-image-container {
+    position: relative;
+}
+.hero-image-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #EF4444;
+    border-radius: 50%;
+    z-index: 0;
+}
