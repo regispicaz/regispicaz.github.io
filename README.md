@@ -1,27 +1,27 @@
+
 # Portfólio - Régis Picaz
 
 [![Acessar Site](https://img.shields.io/badge/-ACESSAR_PORTFÓLIO-00f7ff?style=flat-square)](https://regispicaz.github.io/)
 
-Portfólio profissional com design inspirado no estilo cyberpunk dos anos 80/90. Desenvolvido para mostrar projetos e habilidades técnicas de forma impactante.
+Portfólio profissional com design moderno, minimalista e responsivo. Desenvolvido para apresentar projetos, habilidades técnicas e informações de contato de forma clara e elegante.
 
 ## ✨ Funcionalidades Principais
-- Design responsivo com efeitos neon
-- Seção de portfólio com projetos interativos
-- Formulário de contato integrado
-- Animações CSS personalizadas
-- Compatível com todos os dispositivos
+- Layout responsivo e navegação aprimorada
+- Header fixo com menu adaptativo para mobile
+- Rodapé estilizado com links sociais
+- Uso de Tailwind CSS para estilização rápida e eficiente
+- Fontes customizadas (Inter)
+- Ícones Font Awesome integrados
+- Seções organizadas para apresentação de perfil, tecnologias e serviços
 
 ## 🛠 Tecnologias Utilizadas
 **Frontend:**
 - Tailwind CSS
 - JavaScript Vanilla
-- CSS Custom Properties
-- Gradientes e animações CSS
-
-**"Backend":**
-- FormSubmit para envio de e-mails
+- Font Awesome
+- Google Fonts (Inter)
 
 **Paleta de Cores:**
-- Cyan Neon: `#00f7ff`
-- Pink Flash: `#ff00ff`
-- Preto Matrix: `#000000`
+- Cinza escuro: `#111827`
+- Vermelho destaque: `#ef4444`
+- Branco e tons neutros
