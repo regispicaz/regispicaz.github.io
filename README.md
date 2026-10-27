@@ -32,8 +32,7 @@ Portfólio pessoal de desenvolvedor full stack, com atuação também em QA e co
 ## 📁 Estrutura
 
 - `index.html`: o site inteiro. Conteúdo em três arrays no topo do script: `profile` (dados de contato), `projects` e `services`.
-- `suporte.html`: página de suporte legada, ainda com o visual anterior (Tailwind CSS). Não faz parte do portfólio atual.
-- `src/`: arquivos de estilo e script usados apenas pelo `suporte.html`.
+- `suporte.html`: página de suporte, com canal de WhatsApp e links úteis. Usa o mesmo visual do `index.html`, com estilos embutidos.
 
 ## ✏️ Como atualizar os projetos
 
