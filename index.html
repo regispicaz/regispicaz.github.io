@@ -180,7 +180,7 @@ footer a:hover { color: var(--text); }
 
 <footer class="wrap">
   <span>© Régis Picáz · <span id="year"></span></span>
-  <span><a href="https://github.com/regispicaz" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/regispicaz" target="_blank" rel="noopener">LinkedIn</a></span>
+  <span><a href="https://github.com/regispicaz" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/regispicaz" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://wa.me/5553992419079" target="_blank" rel="noopener">WhatsApp</a></span>
 </footer>
 
 <script>
@@ -200,12 +200,16 @@ const projects = [
       "O Eco-Fit foi pensado para a rotina de uma academia: cadastro e acompanhamento de alunos, controle da operação e a visão que a equipe precisa no dia a dia.",
       "O projeto é uma oportunidade de tratar regras de negócio reais, com fluxos que mudam conforme a operação cresce."
     ], status: "Em desenvolvimento" },
-  { id: "focus", name: "Focus", kind: "Projeto pessoal", stack: ["Produtividade", "Gamificação"],
-    lead: "Plataforma gamificada de produtividade baseada na técnica Pomodoro.",
+  { id: "sindi", name: "Eco-Sindi", kind: "Projeto da Ecossistemas", stack: ["Gestão sindical"],
+    lead: "Sistema de gestão sindical do portfólio da Ecossistemas.",
     body: [
-      "O Focus transforma ciclos de foco em progresso visível. A proposta é manter a técnica Pomodoro, mas dar ao usuário um retorno constante sobre o próprio ritmo.",
-      "É um projeto de produto: a parte de regras e progresso importa tanto quanto a interface."
-    ], status: "Em desenvolvimento" }
+      "O Eco-Sindi é a linha de gestão sindical da Ecossistemas, pensada para a rotina administrativa de entidades sindicais."
+    ], status: "Em desenvolvimento" },
+  { id: "paulino", name: "Nogueira Imóveis", kind: "Site imobiliário", stack: ["Site institucional", "Imóveis"],
+    lead: "Compra, venda e locação de imóveis em Bagé e região.",
+    body: [
+      "Site da Nogueira Imóveis, imobiliária de Bagé e região, com atendimento para compra, venda e locação de imóveis."
+    ], status: "No ar", url: "https://nogueira.ecossistemas.online/" }
 ];
 
 const services = [
@@ -345,6 +349,7 @@ function projetoDetail(p) {
         <p class="lede">${esc(p.lead)}</p>
       </header>
       <div class="prose">${p.body.map(b => `<p>${esc(b)}</p>`).join("")}</div>
+      ${p.url ? `<div class="hero-actions"><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener">Acessar o site →</a></div>` : ""}
       <dl class="project-meta">
         <div><dt class="label">Tipo</dt><dd>${esc(p.kind)}</dd></div>
         <div><dt class="label">Status</dt><dd>${esc(p.status)}</dd></div>
@@ -367,6 +372,7 @@ function contato() {
       <nav class="contact-list" aria-label="Canais">
         <a href="${profile.github}" target="_blank" rel="noopener"><span>GitHub</span><span class="label">${esc(profile.github_handle)}</span></a>
         <a href="${profile.linkedin}" target="_blank" rel="noopener"><span>LinkedIn</span><span class="label">/in/regispicaz</span></a>
+        <a href="https://wa.me/5553992419079" target="_blank" rel="noopener"><span>WhatsApp</span><span class="label">(53) 99241-9079</span></a>
       </nav>
     </section>`;
 }
